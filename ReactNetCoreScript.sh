@@ -38,3 +38,22 @@ echo ${name^}
 
 mkdir $name.frontend
 mv $name.frontend ${name^}.Frontend
+
+echo Adding Eslint and Prettier
+
+cd ${name^}.Frontend
+
+touch .eslintrc
+
+cat >> .eslintrc <<'EOF'
+{ "extends": [ "react-app", "plugin:prettier/recommended" ] }
+EOF
+
+npm i prettier eslint-config-prettier eslint-plugin-prettier --save-dev
+
+npm i husky lint-staged --save-dev
+npm i pretty-quick --save-dev
+
+# Add "precommit": "pretty-quick --staged" into scripts section of package.json
+
+echo DONE
