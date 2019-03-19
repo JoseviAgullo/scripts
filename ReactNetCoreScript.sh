@@ -30,3 +30,11 @@ cd ..
 dotnet sln add ./tests/${name^}.Backend.tests.csproj
 
 cd ..
+
+echo Generating default React template
+npx create-react-app $name.frontend
+
+echo ${name^}
+
+mkdir $name.frontend
+mv $name.frontend ${name^}.Frontend
