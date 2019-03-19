@@ -2,7 +2,7 @@
 
 This is a list of my personal scripts, only made to make sure my projects are all consistent
 
-## ReactNetCoreScript
+## [ReactNetCoreScript.sh](https://github.com/JoseviAgullo/scripts/blob/master/ReactNetCoreScript.sh "ReactNetCoreScript.sh")
 
 It creates the basic folder structure for a project with a Backend based on .Net Core and a Frontend based on React
 
